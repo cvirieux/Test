@@ -1,0 +1,21 @@
+<section class="section container-fluid scrollable scrollable-content" ng-controller="FlatcreationController" ng-swipe-right='Ui.turnOn("uiSidebarLeft")' ui-scroll-bottom="loadMore()" overflow:auto>
+	
+			<div class="container-fluid" >	
+				<h1 class="form-signin-heading">Flat creation</h1>
+				<p class="form-signin-heading">Let's get crazy !</p>
+
+				<form class="form-signin" method="POST" name="FlatCreationForm" role="form">
+					<label for="flatname" class="sr-only">Flat name</label>
+					<input type="text" id="pseudo" class="form-control" placeholder="New Flat" size="30" maxlength="30" ng-model="dataFlat.nom" required autofocus>
+					</br>
+					<div ng-show="SignUpForm.$submitted || form.mail.$touched">
+					</div>
+					</br>
+					<button ng-click="create(dataFlat)" class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+				</form>
+			</div> 
+			</br>
+ </section>
+
+
+
